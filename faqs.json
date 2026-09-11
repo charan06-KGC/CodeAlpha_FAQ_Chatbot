@@ -1,0 +1,313 @@
+[
+    {
+        "questions": [
+            "How can I reset my password?",
+            "I forgot my password",
+            "How do I recover my password?",
+            "I cannot remember my password",
+            "I forgot my login password",
+            "How can I change my password?"
+        ],
+        "answer": "You can reset your password by clicking 'Forgot Password' on the login page and following the instructions sent to your registered email."
+    },
+    {
+        "questions": [
+            "How do I create an account?",
+            "How can I sign up?",
+            "How do I register?",
+            "I want to create a new account",
+            "How can I make an account?"
+        ],
+        "answer": "Click the 'Sign Up' button on the homepage and enter your name, email address, and password."
+    },
+    {
+        "questions": [
+            "How can I delete my account?",
+            "I want to delete my account",
+            "How do I close my account?",
+            "Can I remove my account?",
+            "I don't want my account anymore"
+        ],
+        "answer": "You can request account deletion through your account settings or by contacting customer support."
+    },
+    {
+        "questions": [
+            "How can I change my email address?",
+            "Can I update my email?",
+            "I want to change my registered email",
+            "How do I change my account email?"
+        ],
+        "answer": "You can update your email address from your account settings. You may need to verify the new email address."
+    },
+    {
+        "questions": [
+            "How can I track my order?",
+            "Where is my order?",
+            "How do I check my order status?",
+            "Can I track my package?",
+            "Where can I see my shipment?",
+            "I want to track my order"
+        ],
+        "answer": "You can track your order from the 'My Orders' section of your account. Select the order to view its current status."
+    },
+    {
+        "questions": [
+            "How long does delivery take?",
+            "When will my order arrive?",
+            "How many days does shipping take?",
+            "What is the delivery time?",
+            "When can I expect my package?"
+        ],
+        "answer": "Standard delivery usually takes 3 to 5 business days. Delivery times may vary depending on your location."
+    },
+    {
+        "questions": [
+            "Can I cancel my order?",
+            "How do I cancel an order?",
+            "I want to cancel my order",
+            "Can I stop my order?",
+            "How can I cancel a purchase?"
+        ],
+        "answer": "Yes, you can cancel your order if it has not been shipped. Go to 'My Orders' and select the cancellation option."
+    },
+    {
+        "questions": [
+            "Can I change my delivery address?",
+            "How do I update my shipping address?",
+            "I entered the wrong address",
+            "Can I change where my order is delivered?",
+            "I want to change my delivery location"
+        ],
+        "answer": "If your order has not been shipped, contact customer support as soon as possible to request an address change."
+    },
+    {
+        "questions": [
+            "What should I do if my order is delayed?",
+            "My order is late",
+            "Why hasn't my order arrived?",
+            "My package is delayed",
+            "Where is my delayed order?"
+        ],
+        "answer": "Please check your order tracking information first. If the expected delivery date has passed, contact customer support for assistance."
+    },
+    {
+        "questions": [
+            "What should I do if I receive the wrong product?",
+            "I received the wrong item",
+            "My order is incorrect",
+            "You sent me the wrong product",
+            "How do I report an incorrect item?"
+        ],
+        "answer": "Please contact customer support and provide your order number and details of the incorrect product. We will help arrange a replacement or return."
+    },
+    {
+        "questions": [
+            "How can I return a product?",
+            "How do I return an item?",
+            "I want to return my order",
+            "Can I return a product?",
+            "What is the return process?"
+        ],
+        "answer": "You can request a return from the 'My Orders' section. Select the product and choose 'Return Item'."
+    },
+    {
+        "questions": [
+            "What is your return policy?",
+            "How many days do I have to return something?",
+            "How long can I keep a product before returning it?",
+            "What are the return rules?",
+            "When can I return a product?"
+        ],
+        "answer": "Products can generally be returned within the eligible return period shown on the product or order details. Check your order page for the applicable return deadline."
+    },
+    {
+        "questions": [
+            "Can I exchange a product?",
+            "How do I exchange an item?",
+            "I want a different product",
+            "Can I replace my product with another one?",
+            "How can I get an exchange?"
+        ],
+        "answer": "Exchange availability depends on the product. Check the 'My Orders' section or contact customer support to request an exchange."
+    },
+    {
+        "questions": [
+            "Can I return a damaged product?",
+            "My product arrived damaged",
+            "What if my item is damaged?",
+            "I received a broken product",
+            "How do I report damaged goods?"
+        ],
+        "answer": "Contact customer support as soon as possible and provide photos of the damaged product and packaging."
+    },
+    {
+        "questions": [
+            "How long does a refund take?",
+            "When will I get my refund?",
+            "How long until my money is returned?",
+            "When will my refund arrive?",
+            "How much time does a refund need?"
+        ],
+        "answer": "Refunds are generally processed within 5 to 7 business days after the returned product has been received."
+    },
+    {
+        "questions": [
+            "Where is my refund?",
+            "My refund hasn't arrived",
+            "I have not received my refund",
+            "Why is my refund delayed?",
+            "Can you check my refund?"
+        ],
+        "answer": "If your refund has exceeded the expected processing time, please contact customer support with your order details so we can investigate."
+    },
+    {
+        "questions": [
+            "How will I receive my refund?",
+            "Where does the refund go?",
+            "Will my refund go back to my card?",
+            "How is refund money returned?",
+            "What payment method is used for refunds?"
+        ],
+        "answer": "Refunds are normally returned to the original payment method used for the order."
+    },
+    {
+        "questions": [
+            "What payment methods are accepted?",
+            "How can I pay?",
+            "What payment options do you have?",
+            "Can I pay with a credit card?",
+            "Which payment methods are available?"
+        ],
+        "answer": "We accept credit cards, debit cards, UPI, net banking, and other supported online payment methods."
+    },
+    {
+        "questions": [
+            "Do you accept UPI?",
+            "Can I pay using UPI?",
+            "Is UPI payment available?",
+            "Can I use Google Pay or another UPI app?",
+            "How do I pay with UPI?"
+        ],
+        "answer": "Yes, UPI payments are supported. You can select UPI during checkout and complete the payment through your preferred UPI app."
+    },
+    {
+        "questions": [
+            "Is cash on delivery available?",
+            "Can I pay cash when my order arrives?",
+            "Do you offer COD?",
+            "Can I use cash to pay for my order?",
+            "Is COD available for all products?"
+        ],
+        "answer": "Cash on delivery is available for selected products and locations. Availability is shown during checkout."
+    },
+    {
+        "questions": [
+            "My payment failed",
+            "Why did my payment fail?",
+            "I cannot complete my payment",
+            "The payment is not going through",
+            "What should I do if payment fails?"
+        ],
+        "answer": "Please check your payment details and try again. If the problem continues, try another supported payment method or contact your bank."
+    },
+    {
+        "questions": [
+            "Money was deducted but my order was not placed",
+            "Payment succeeded but my order failed",
+            "I was charged but did not receive an order",
+            "Money was taken from my account",
+            "My payment went through but there is no order"
+        ],
+        "answer": "Please wait a few minutes and check your order history. If the order was not created, contact customer support with your transaction details."
+    },
+    {
+        "questions": [
+            "How much does shipping cost?",
+            "Is delivery free?",
+            "What are the shipping charges?",
+            "Do I have to pay for delivery?",
+            "How much is delivery?"
+        ],
+        "answer": "Shipping charges depend on the product, delivery location, and selected delivery option. The final shipping cost is displayed during checkout."
+    },
+    {
+        "questions": [
+            "Do you offer express delivery?",
+            "Can I get my order faster?",
+            "Is fast delivery available?",
+            "Do you have same day delivery?",
+            "Can I choose express shipping?"
+        ],
+        "answer": "Express delivery may be available for selected products and locations. Available delivery options are shown during checkout."
+    },
+    {
+        "questions": [
+            "What happens if I am not home?",
+            "What if I miss my delivery?",
+            "I won't be home for delivery",
+            "What happens if I miss the courier?",
+            "Can someone else receive my package?"
+        ],
+        "answer": "The delivery partner may attempt delivery again or contact you to arrange another delivery attempt. Availability depends on the courier service."
+    },
+    {
+        "questions": [
+            "How can I search for a product?",
+            "Where can I find products?",
+            "How do I search the store?",
+            "I want to find a product",
+            "How do I look for an item?"
+        ],
+        "answer": "Use the search bar at the top of the website and enter the product name or keywords related to what you are looking for."
+    },
+    {
+        "questions": [
+            "How can I check product availability?",
+            "Is this product available?",
+            "Is the item in stock?",
+            "How do I know if something is available?",
+            "Can I check stock?"
+        ],
+        "answer": "Product availability is displayed on the product page. If an item is out of stock, you may need to check again later."
+    },
+    {
+        "questions": [
+            "What if a product is out of stock?",
+            "When will an out of stock product be available?",
+            "Can I buy an item that is out of stock?",
+            "Will you restock this product?",
+            "How do I know when something is back in stock?"
+        ],
+        "answer": "Out-of-stock products may be restocked in the future. Check the product page periodically for updated availability."
+    },
+    {
+        "questions": [
+            "How can I contact customer support?",
+            "I need help from customer service",
+            "How do I contact support?",
+            "Can I talk to customer service?",
+            "Where can I get help?"
+        ],
+        "answer": "You can contact customer support through the Help section on the website or send us an email with your order details."
+    },
+    {
+        "questions": [
+            "What are your customer support hours?",
+            "When is customer service available?",
+            "What time does support open?",
+            "When can I contact support?",
+            "Is customer support available today?"
+        ],
+        "answer": "Customer support availability depends on the support channel. Please check the Help section for the latest support hours."
+    },
+    {
+        "questions": [
+            "Are your products genuine?",
+            "Are the products original?",
+            "How do I know the product is genuine?",
+            "Do you sell authentic products?",
+            "Are these products real?"
+        ],
+        "answer": "We aim to provide genuine products from trusted sources. Product information and seller details are available on the product page where applicable."
+    }
+]

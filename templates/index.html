@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-app">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <div class="header-left">
+
+                <div class="bot-avatar">
+                    🤖
+                </div>
+
+                <div>
+                    <h1>FAQ Assistant</h1>
+
+                    <div class="status">
+                        <span></span>
+                        Online
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    class="examples-btn"
+                    onclick="showExamples()">
+                    Examples
+                </button>
+
+                <button
+                    class="clear-btn"
+                    onclick="clearChat()">
+                    Clear chat
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             CHAT AREA
+        ========================== -->
+
+        <main id="chat-box" class="chat-box">
+
+            <!-- Welcome Screen -->
+
+            <div class="welcome">
+
+                <div class="welcome-avatar">
+                    🤖
+                </div>
+
+                <h2>How can I help you?</h2>
+
+                <p>
+                    Ask me anything about orders, payments,
+                    delivery, returns or your account.
+                </p>
+
+
+                <!-- Quick Suggestions -->
+
+                <div class="suggestions">
+
+                    <button
+                        onclick="askSuggestion('How can I reset my password?')">
+                        Reset my password
+                    </button>
+
+                    <button
+                        onclick="askSuggestion('How can I track my order?')">
+                        Track my order
+                    </button>
+
+                    <button
+                        onclick="askSuggestion('How long does delivery take?')">
+                        Delivery time
+                    </button>
+
+                    <button
+                        onclick="askSuggestion('How can I return a product?')">
+                        Return a product
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <!-- =========================
+             INPUT AREA
+        ========================== -->
+
+        <footer class="input-section">
+
+            <div class="input-box">
+
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask a question..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="send-button"
+                    onclick="sendMessage()">
+                    ↑
+                </button>
+
+            </div>
+
+            <p>
+                FAQ Assistant can make mistakes.
+                Check important information.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- =========================
+         EXAMPLES MODAL
+    ========================== -->
+
+    <div
+        id="examples-modal"
+        class="modal"
+    >
+
+        <div class="modal-content">
+
+
+            <!-- Modal Header -->
+
+            <div class="modal-header">
+
+                <div>
+
+                    <h2>What can I ask?</h2>
+
+                    <p>
+                        Try any of these questions or type your own.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="close-modal"
+                    onclick="closeExamples()">
+                    ×
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================
+                 EXAMPLE QUESTIONS
+            ========================== -->
+
+            <div class="example-grid">
+
+
+                <!-- Account -->
+
+                <div class="example-category">
+
+                    <h3>🔐 Account</h3>
+
+                    <button
+                        onclick="askExample('How can I reset my password?')">
+                        How can I reset my password?
+                    </button>
+
+                    <button
+                        onclick="askExample('How do I create an account?')">
+                        How do I create an account?
+                    </button>
+
+                    <button
+                        onclick="askExample('How can I delete my account?')">
+                        How can I delete my account?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Orders -->
+
+                <div class="example-category">
+
+                    <h3>📦 Orders</h3>
+
+                    <button
+                        onclick="askExample('How can I track my order?')">
+                        How can I track my order?
+                    </button>
+
+                    <button
+                        onclick="askExample('Can I cancel my order?')">
+                        Can I cancel my order?
+                    </button>
+
+                    <button
+                        onclick="askExample('What should I do if my order is delayed?')">
+                        What if my order is delayed?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Delivery -->
+
+                <div class="example-category">
+
+                    <h3>🚚 Delivery</h3>
+
+                    <button
+                        onclick="askExample('How long does delivery take?')">
+                        How long does delivery take?
+                    </button>
+
+                    <button
+                        onclick="askExample('How much does shipping cost?')">
+                        How much does shipping cost?
+                    </button>
+
+                    <button
+                        onclick="askExample('Do you offer express delivery?')">
+                        Do you offer express delivery?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Returns -->
+
+                <div class="example-category">
+
+                    <h3>↩️ Returns</h3>
+
+                    <button
+                        onclick="askExample('How can I return a product?')">
+                        How can I return a product?
+                    </button>
+
+                    <button
+                        onclick="askExample('Can I exchange a product?')">
+                        Can I exchange a product?
+                    </button>
+
+                    <button
+                        onclick="askExample('Can I return a damaged product?')">
+                        Can I return a damaged product?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Payments -->
+
+                <div class="example-category">
+
+                    <h3>💳 Payments</h3>
+
+                    <button
+                        onclick="askExample('What payment methods are accepted?')">
+                        What payment methods are accepted?
+                    </button>
+
+                    <button
+                        onclick="askExample('Do you accept UPI?')">
+                        Do you accept UPI?
+                    </button>
+
+                    <button
+                        onclick="askExample('My payment failed')">
+                        My payment failed
+                    </button>
+
+                </div>
+
+
+
+                <!-- Refunds -->
+
+                <div class="example-category">
+
+                    <h3>💰 Refunds</h3>
+
+                    <button
+                        onclick="askExample('Where is my refund?')">
+                        Where is my refund?
+                    </button>
+
+                    <button
+                        onclick="askExample('How long does a refund take?')">
+                        How long does a refund take?
+                    </button>
+
+                    <button
+                        onclick="askExample('How will I receive my refund?')">
+                        How will I receive my refund?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Products -->
+
+                <div class="example-category">
+
+                    <h3>🛍️ Products</h3>
+
+                    <button
+                        onclick="askExample('How can I search for a product?')">
+                        How can I search for a product?
+                    </button>
+
+                    <button
+                        onclick="askExample('How can I check product availability?')">
+                        How can I check product availability?
+                    </button>
+
+                    <button
+                        onclick="askExample('What if a product is out of stock?')">
+                        What if a product is out of stock?
+                    </button>
+
+                </div>
+
+
+
+                <!-- Customer Support -->
+
+                <div class="example-category">
+
+                    <h3>👨‍💻 Support</h3>
+
+                    <button
+                        onclick="askExample('How can I contact customer support?')">
+                        How can I contact customer support?
+                    </button>
+
+                    <button
+                        onclick="askExample('What are your customer support hours?')">
+                        What are your support hours?
+                    </button>
+
+                    <button
+                        onclick="askExample('How do I report a problem?')">
+                        How do I report a problem?
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
